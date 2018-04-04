@@ -253,7 +253,72 @@ axis([-5 5 -0.5 max(abs(MANCHESTER))]);
 grid on;
 
 %% Bifase Marca
+N=10;
+s1=[ones(1,50) -1*ones(1,50)];
+s2=ones(1,100);
+bits=randint(1,N)*2-1;
+bfm=[];
+marca=bits(1);
+for n=1:N
+    marca=-1*marca;
+    if(bits(n)==1)
+        bfm=[bfm s1*bits(n)*marca];
+        marca=-1*marca;
+    else
+        bfm=[bfm s2*marca];
+    end
+end
+figure(7);
+subplot(2, 1, 1);
+plot(t, bfm);
+title('Codigo Bifase Marca');
+axis([0, N -1.5 1.5]);
+grid on;
 
+Espectro Bifase Marca
+N=300;
+bits=randint(1,N)*2-1;
+bfm=[];
+marca=bits(1);
+for n=1:N
+    marca=-1*marca;
+    if(bits(n)==1)
+        bfm=[bfm s1*bits(n)*marca];
+        marca=-1*marca;
+    else
+        bfm=[bfm s2*marca];
+    end
+end
+BFM=fftshift(fft(bfm,100000))*ts;
+f=linspace(-1/(2*ts),1/(2*ts),length(BFM));
+subplot(2, 1, 2);
+plot(f, abs(BFM));
+title('Espectro');
+axis([-5 5 -0.5 max(abs(BFM))]);
+grid on;
+
+%% Bifase Espacio
+N=10;
+s1=[ones(1,50) -1*ones(1,50)];
+s2=ones(1,100);
+bits=randint(1,N)*2-1;
+bfm=[];
+marca=bits(1);
+for n=1:N
+    marca=-1*marca;
+    if(bits(n)==-1)
+        bfm=[bfm s1*bits(n)*marca];
+        marca=-1*marca;
+    else
+        bfm=[bfm s2*marca];
+    end
+end
+figure(7);
+subplot(2, 1, 1);
+plot(t, bfm);
+title('Codigo Bifase Marca');
+axis([0, N -1.5 1.5]);
+grid on;
 
 %% Machester
 %s0=[zeros(1,50) ones(1,50)]
