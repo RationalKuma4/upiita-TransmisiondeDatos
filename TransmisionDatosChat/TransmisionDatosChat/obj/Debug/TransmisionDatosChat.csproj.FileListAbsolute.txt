@@ -1,0 +1,18 @@
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\bin\Debug\TransmisionDatosChat.exe.config
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\bin\Debug\TransmisionDatosChat.exe
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\bin\Debug\TransmisionDatosChat.pdb
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.csprojResolveAssemblyReference.cache
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.Form1.resources
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.Properties.Resources.resources
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.csproj.GenerateResource.Cache
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.exe
+c:\users\anselmo\documents\visual studio 2015\Projects\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.pdb
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\bin\Debug\TransmisionDatosChat.exe.config
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.exe
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.pdb
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.csprojResolveAssemblyReference.cache
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.Form1.resources
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.Properties.Resources.resources
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\obj\Debug\TransmisionDatosChat.csproj.GenerateResource.Cache
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\bin\Debug\TransmisionDatosChat.exe
+C:\Users\Anselmo\Documents\GitHub\TransmisionDatos\TransmisionDatosChat\TransmisionDatosChat\bin\Debug\TransmisionDatosChat.pdb
