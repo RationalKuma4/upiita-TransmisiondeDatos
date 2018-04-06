@@ -1,0 +1,7 @@
+c:\Users\Alumnos\Documents\Visual Studio 2010\Projects\TransmisionChat\TransmisionChat\bin\Debug\TransmisionChat.exe
+c:\Users\Alumnos\Documents\Visual Studio 2010\Projects\TransmisionChat\TransmisionChat\bin\Debug\TransmisionChat.pdb
+c:\Users\Alumnos\Documents\Visual Studio 2010\Projects\TransmisionChat\TransmisionChat\obj\x86\Debug\TransmisionChat.Form1.resources
+c:\Users\Alumnos\Documents\Visual Studio 2010\Projects\TransmisionChat\TransmisionChat\obj\x86\Debug\TransmisionChat.Properties.Resources.resources
+c:\Users\Alumnos\Documents\Visual Studio 2010\Projects\TransmisionChat\TransmisionChat\obj\x86\Debug\TransmisionChat.csproj.GenerateResource.Cache
+c:\Users\Alumnos\Documents\Visual Studio 2010\Projects\TransmisionChat\TransmisionChat\obj\x86\Debug\TransmisionChat.exe
+c:\Users\Alumnos\Documents\Visual Studio 2010\Projects\TransmisionChat\TransmisionChat\obj\x86\Debug\TransmisionChat.pdb
