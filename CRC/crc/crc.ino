@@ -1,6 +1,5 @@
 #define S1 12
 #define S2 11
-
 #define LED1 10
 #define LED2 9
 #define LED3 8
@@ -10,10 +9,9 @@
 #define LED7 4
 #define LED8 3
 #define LED9 2
-
-int c4,c3,c2,c1,c0,c5,c6,c7,c8,s,b;
-int m,c4m,c4c1,c4c3;
-int arr[8], ant[8];
+int c4,c3,c2,c1,c0,c5,c6,c7,M,s,b;
+int arr[9]{0,0,0,0,0,0,0,0};
+int ant[9]{0,0,0,0,0,0,0,0};
 
 void setup() {
   pinMode(S1, INPUT);
@@ -27,7 +25,7 @@ void setup() {
   pinMode(LED7, OUTPUT);
   pinMode(LED8, OUTPUT);
   pinMode(LED9, OUTPUT);
-  
+    
   Serial.begin(9600);
   Serial.println("Serial port open");
 }
@@ -35,66 +33,64 @@ void setup() {
 void loop() 
 {
   delay(2000);
-  ReadComponents();
-  arr[0]=c4;
-  arr[1]=c3;
-  arr[2]=c2;
-  arr[3]=c1;
-  arr[4]=c0;
-  arr[5]=c5;
-  arr[6]=c6;
-  arr[7]=c7;
-  arr[8]=c8;
-
-  for(int i=0; i<8; i++)
-    ant[1]=arr[i];
-  
-  if((s==1 || s==0) && b==1)
+  b = digitalRead(S2);
+  while (b == 0) 
   {
-    arr[0]=SumaBinaria(arr[0],arr[1]);
-    arr[1]=ant[2];
-    arr[2]=SumaBinaria(arr[4],arr[3]);
-    arr[3]=ant[4];
-    arr[4]=SumaBinaria(arr[0],s);
-
-    
-    arr[2]=ant[3];
-    arr[4]=ant[5];
-    arr[6]=SumaBinaria(arr[0]+arr[1]);
-    
-    
-    //c4=c4+c3;
-    arr[0]+=arr[1];
-    //c2=c4+c1;
-    arr[0]+=arr[0];
+    s = digitalRead(S1);
+    b = digitalRead(S2);
   }
-  
+
+  arr[5]=SumaBinaria(ant[0],ant[1]);
+  arr[6]=SumaBinaria(ant[0],ant[3]);
+  arr[7]=SumaBinaria(ant[0],s);
+  arr[8]=s;
+  arr[0]=arr[5];
+  arr[1]=ant[2];
+  arr[2]=arr[6];
+  arr[3]=ant[4];
+  arr[4]=arr[7];
+
+  for(int i=0; i<9; i++)
+  {
+      ant[i]=arr[i];
+  }
+
+  /*Serial.println("Aneterior");
+  for(int i=0; i<9; i++)
+  {
+    Serial.print(ant[i]);
+  }
+  Serial.println("");*/
+  Serial.println("Array");
+  for(int i=0; i<9; i++)
+  {
+    Serial.print(arr[i]);
+  }
+  Serial.println("");
+  MostrarCodigo(arr);
 }
 
 int SumaBinaria(int a, int b)
 {
   int res;
-  if(a==0 && b==0) res=1;
-  else if()
-  
+  if(a==0 && b==0) res=0;
+  else if(a==0 && b==1) res=1;
+  else if(a==1 && b==0) res=1;
+  else res=0;
   return res;
 }
 
-
-void ReadComponents()
+void MostrarCodigo(int arr[])
 {
-  s = digitalRead(S1);
-  b = digitalRead(S2);
-  c4 = digitalRead(LED1);
-  c3 = digitalRead(LED2);
-  c2 = digitalRead(LED3);
-  c1 = digitalRead(LED4);
-  c0 = digitalRead(LED5);
-  
-  c5 = digitalRead(LED6);
-  c6 = digitalRead(LED7);
-  c7 = digitalRead(LED8);
-  c8 = digitalRead(LED9);
+  digitalWrite(LED1, arr[0]);
+  digitalWrite(LED2, arr[1]);
+  digitalWrite(LED3, arr[2]);
+  digitalWrite(LED4, arr[3]);
+  digitalWrite(LED5, arr[4]);
+  digitalWrite(LED6, arr[5]);
+  digitalWrite(LED7, arr[6]);
+  digitalWrite(LED8, arr[7]);
+  digitalWrite(LED9, arr[8]);
 }
 
 
